@@ -1,0 +1,36 @@
+
+Artist Classification Model
+
+This repository contains code for training and evaluating an artist classification model using the CIFAR-10 dataset. The model is designed to classify images into one of ten classes, each representing a different artist style.
+
+Dataset
+
+The CIFAR-10 dataset is used for training and evaluating the model. It consists of 60,000 32x32 color images in 10 different classes, with 6,000 images per class.
+
+Model Architecture
+
+The model architecture consists of convolutional layers followed by max-pooling layers, flattening, and dense layers. The final layer uses softmax activation for multi-class classification.
+
+Training
+
+The model is trained for 10 epochs using the Adam optimizer and sparse categorical crossentropy loss. The training process includes validation on a separate validation set to monitor model performance.
+
+Evaluation
+
+The trained model is evaluated on the test set, and the accuracy is reported. Additionally, the training history, including accuracy and validation accuracy over epochs, is visualized using matplotlib.
+
+Usage
+Dependencies: I have required dependencies installed. I can install them using:
+"pip install tensorflow matplotlib scikit-learn"
+
+Training the Model: Run the provided script to train the artist classification model:
+"python artist_classification_model.py"
+Evaluation: The script will display the test accuracy, and a plot of training history will be shown.
+
+Model Saving: The trained model is saved as "artist_classification_model.h5."
+
+
+Acknowledgments
+
+This code is based on the CIFAR-10 dataset and TensorFlow documentation.
+CIFAR-10 dataset
